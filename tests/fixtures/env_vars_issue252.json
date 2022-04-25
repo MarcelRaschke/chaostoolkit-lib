@@ -1,0 +1,16 @@
+{
+    "configuration": {
+        "some_config_2": {
+            "name": "some config 2",
+            "type": "probe",
+            "provider": {
+                "type": "python",
+                "module": "os.path",
+                "func": "exists",
+                "arguments": {
+            "path": "${some_config_1}"
+            }
+        }
+        }
+    }
+}

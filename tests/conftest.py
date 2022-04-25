@@ -11,6 +11,11 @@ from chaoslib.types import Settings
 
 
 @pytest.fixture
+def fixtures_dir() -> str:
+    return os.path.join(os.path.dirname(__file__), "fixtures")
+
+
+@pytest.fixture
 def settings_file() -> str:
     return os.path.join(os.path.dirname(__file__), "fixtures", "settings.yaml")
 
